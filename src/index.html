@@ -1,33 +1,260 @@
 <!doctype html>
-
-<html>
+<html lang="ca">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-  <!-- do not remove this line! -->
-  <title>UOC Boilerplate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="description"
+    content="Descobreix Fallout, una sèrie postapocalíptica plena d'aventures, misteri i crítica social." />
+
+  <link rel="stylesheet" href="./assets/styles/main.scss" />
+
+  <title>Fallout | Sobreviuries al Yermo?</title>
 </head>
 
 <body>
-  <div class="uoc-container">
-    <picture>
-      <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-      <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
+  <main class="pipboy">
+
+    <!-- Contingut de la pantalla -->
+    <section class="pipboy__screen" aria-label="Terminal Fallout">
+      <div class="pipboy__content">
+        <!-- Menú de navegació -->
+        <nav class="pipboy__nav" aria-label="Navegació principal" data-reveal>
+          <details class="pipboy__menu">
+            <summary class="pipboy__menu-toggle">
+              <span>MENU</span>
+              <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </summary>
+
+            <ul class="pipboy__menu-list">
+              <li class="pipboy__menu-item">
+                <a class="pipboy__menu-link" href="#inici">INICI</a>
+              </li>
+              <li class="pipboy__menu-item">
+                <a class="pipboy__menu-link" href="#historia">HISTÒRIA</a>
+              </li>
+              <li class="pipboy__menu-item">
+                <a class="pipboy__menu-link" href="#personatges">PERSONATGES</a>
+              </li>
+              <li class="pipboy__menu-item">
+                <a class="pipboy__menu-link" href="#recomanacio">OPINIÓ</a>
+              </li>
+            </ul>
+          </details>
+        </nav>
+        <!-- Portada de la web -->
+        <!-- Portada de la web -->
+        <section class="pipboy__intro" id="inici">
+
+          <div class="pipboy__intro-header" data-reveal>
+            <span>VAULT-TEC DATABASE</span>
+            <span>FILE 001</span>
+          </div>
+
+          <p class="pipboy__system" data-typed>
+            [ ARXIU DESCLASSIFICAT ]
+          </p>
+
+          <h1 class="pipboy__title" data-typed>FALLOUT_</h1>
+
+          <p class="pipboy__subtitle" data-typed>
+            SOBREVIURIES AL YERMO?
+          </p>
+
+          <img class="pipboy__vault-boy" src="./assets/images/vault-boy.webp" alt="Vault Boy aixecant el dit polze"
+            width="100" height="100" />
+
+          <a class="pipboy__button" href="#historia" data-typed data-discover>
+            &gt; DESCOBREIX LA HISTÒRIA
+          </a>
+
+          <div class="pipboy__status" data-reveal>
+            <span>STATUS: ONLINE</span>
+            <span>RADS: 000</span>
+          </div>
+
+        </section>
+
+        <!-- La història -->
+        <section class="pipboy__section" id="historia" data-reveal>
+
+          <div class="pipboy__section-header">
+            <span>DATA / ARCHIVE 002</span>
+            <i class="fa-solid fa-radiation" aria-hidden="true"></i>
+          </div>
+
+          <h2>LA HISTÒRIA_</h2>
+
+          <p>
+            L'any 2077, una guerra nuclear va transformar
+            el planeta en un territori devastat.
+          </p>
+
+          <p>
+            Dos-cents dinou anys després, Lucy MacLean abandona
+            la seguretat del Refugi 33 i s'endinsa en un món
+            exterior on la supervivència, la violència i les
+            desigualtats formen part de la vida quotidiana.
+          </p>
+
+          <p>
+            A través de tres protagonistes amb visions molt
+            diferents, Fallout combina aventures, humor negre
+            i una crítica a les contradiccions de la societat.
+          </p>
+
+          <p class="pipboy__section-note">
+            [ DOCUMENT SENSE ESPÒILERS ]
+          </p>
+
+        </section>
+        <!-- Personatges principals -->
+        <section class="pipboy__section" id="personatges" data-reveal>
+
+          <div class="pipboy__section-header">
+            <span>DATA / ARCHIVE 003</span>
+            <i class="fa-solid fa-users" aria-hidden="true"></i>
+          </div>
+
+          <h2>PERSONATGES_</h2>
+
+          <article class="pipboy__character">
+            <img class="pipboy__character-image" src="./assets/images/lucy.webp"
+              alt="Lucy MacLean, protagonista de Fallout" loading="lazy" />
+            <h3 class="pipboy__character-name">LUCY MACLEAN</h3>
+            <p>
+              Habitant del Refugi 33, optimista i idealista.
+              Descobrirà que el món exterior és molt diferent
+              del que havia imaginat.
+            </p>
+          </article>
+
+          <article class="pipboy__character">
+            <img class="pipboy__character-image" src="./assets/images/maximus.webp"
+              alt="Maximus, membre de la Germandat de l'Acer" loading="lazy" />
+            <h3 class="pipboy__character-name">MAXIMUS</h3>
+            <p>
+              Un jove vinculat a la Germandat de l'Acer
+              que busca trobar el seu lloc en un món
+              violent i desigual.
+            </p>
+          </article>
+
+          <article class="pipboy__character">
+            <img class="pipboy__character-image" src="./assets/images/ghoul.webp"
+              alt="The Ghoul, caçador de recompenses de Fallout" loading="lazy" />
+            <h3 class="pipboy__character-name">THE GHOUL</h3>
+            <p>
+              Un caçador de recompenses marcat per la radiació
+              i per un passat que connecta amb el món
+              anterior a les bombes.
+            </p>
+          </article>
+
+        </section>
+        <!-- Recomanació personal -->
+        <section class="pipboy__section" id="recomanacio" data-reveal>
+
+          <div class="pipboy__section-header">
+            <span>DATA / ARCHIVE 004</span>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+          </div>
+
+          <h2>PER QUÈ VEURE FALLOUT?_</h2>
+
+          <p>
+            Fallout és molt més que una sèrie sobre
+            un món destruït per una guerra nuclear.
+            És una història que combina ciència-ficció,
+            acció, humor negre i crítica social.
+          </p>
+
+          <h3>UN UNIVERS DIFERENT</h3>
+          <p>
+            La sèrie destaca per la seva estètica
+            retrofuturista, que barreja la imatge
+            dels anys cinquanta amb tecnologia avançada
+            i paisatges postapocalíptics.
+          </p>
+
+          <h3>PERSONATGES AMB CONTRADICCIONS</h3>
+          <p>
+            Els protagonistes tenen maneres molt diferents
+            d'entendre el món. Les seves decisions ens
+            fan reflexionar sobre la moral, el poder
+            i la supervivència.
+          </p>
+
+          <h3>HUMOR I CRÍTICA SOCIAL</h3>
+          <p>
+            Malgrat la violència i la destrucció,
+            Fallout utilitza l'humor per qüestionar
+            el consumisme, les desigualtats
+            i els abusos de poder.
+          </p>
+
+          <p class="pipboy__section-note pipboy__section-note--highlight">
+            [ RECOMANACIÓ: ALTAMENT FAVORABLE ]
+          </p>
+
+        </section>
+
+        <!-- Fitxa tècnica de la sèrie -->
+        <section class="pipboy__section" id="fitxa" data-reveal>
+
+          <div class="pipboy__section-header">
+            <span>DATA / ARCHIVE 005</span>
+            <i class="fa-solid fa-film" aria-hidden="true"></i>
+          </div>
+
+          <h2>FITXA TÈCNICA_</h2>
+
+          <dl class="pipboy__facts">
+            <dt>TÍTOL</dt>
+            <dd>Fallout</dd>
+
+            <dt>ESTRENA</dt>
+            <dd>2024</dd>
+
+            <dt>GÈNERE</dt>
+            <dd>Ciència-ficció, acció i aventura</dd>
+
+            <dt>PLATAFORMA</dt>
+            <dd>Prime Video</dd>
+
+            <dt>ORIGEN</dt>
+            <dd>Basada en la saga de videojocs Fallout</dd>
+          </dl>
+
+          <a class="pipboy__button" href="https://www.youtube.com/watch?v=0kQ8i2FpRDk" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa-solid fa-play" aria-hidden="true"></i>
+            VEURE EL TRÀILER
+          </a>
+
+          <p class="pipboy__section-note">
+            [ FI DE L'ARXIU - VAULT-TEC ]
+          </p>
+
+        </section>
+
+      </div>
+    </section>
+
+
+
+    <!-- Carcassa del Pip-Boy -->
+    <picture class="pipboy__frame">
+      <source media="(min-width: 1024px)" srcset="./assets/images/pipboy-horizontal-frame.webp" />
+      <img src="./assets/images/pipboy-vertical-frame.webp" alt="" aria-hidden="true" fetchpriority="high"
+        loading="eager" />
     </picture>
-    <h1 class="uoc-title"><i class="fas fa-university"></i>Hello, UOC!</h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
-    <button class="boto-prova">
-      Botó de prova
-    </button>
-  </div>
+
+  </main>
+
   <include src="./views/footer.html"></include>
+
   <script type="module" src="./assets/scripts/main.js"></script>
   <!-- do not remove this line! -->
 </body>

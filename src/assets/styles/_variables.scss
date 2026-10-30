@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "sass:math";
 
 $font-family-sans-serif:
   -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
@@ -10,3 +11,25 @@ $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
 $mqMinWidth: 420px;
+
+// Colors de la pantalla del Pip-Boy
+$fallout-bg: #071108;
+$fallout-green: #9aff71;
+$fallout-green-light: #b6ff92;
+$fallout-green-dark: #416c39;
+
+// Colors de l'entorn
+$fallout-body-bg: #171b16;
+$fallout-metal: #464b3a;
+
+// Tipografia
+$fallout-font: "Courier New", monospace;
+
+// Punt de ruptura responsive
+$breakpoint-desktop: 1024px;
+
+
+// Converteix un valor en píxels a rem
+@function rem($pixels) {
+  @return math.div($pixels, 16) * 1rem;
+}
