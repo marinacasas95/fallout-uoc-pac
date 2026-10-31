@@ -13,7 +13,6 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-
   background-color: variables.$fallout-body-bg;
   color: variables.$fallout-green;
   font-family: variables.$fallout-font;
@@ -25,6 +24,7 @@ body {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+
   // Carcassa exterior
   &__frame {
     display: block;
@@ -39,6 +39,7 @@ body {
       height: auto;
     }
   }
+
   // Pantalla interactiva
   &__screen {
     position: absolute;
@@ -49,14 +50,12 @@ body {
     left: 30%;
     width:57%;
     height: 64%;
-
     background-color: variables.$fallout-bg;
     color: variables.$fallout-green;
-
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden auto;
   
   }
+
     // Informació del sistema
   &__system {
     margin: 0 0 1rem;
@@ -114,6 +113,7 @@ body {
     line-height: 1.3;
     color: variables.$fallout-green-light;
   }
+
   h3 {
     margin: 1.5rem 0 0.5rem;
     padding-left: 0.5rem;
@@ -123,6 +123,7 @@ body {
     font-weight: 700;
     line-height: 1.3;
   }
+
   p {
     margin: 0 0 1rem;
   }
@@ -146,6 +147,7 @@ body {
     font-size: 0.65rem;
     opacity: 0.8;
   }
+
 &__section-note--highlight {
   padding: 0.75rem;
   border: 1px solid variables.$fallout-green;
@@ -154,13 +156,15 @@ body {
   text-align: center;
   opacity: 1;
 }
+
   // Contingut de la pantalla
   &__content {
     padding: 1rem;
   }
+
   // Navegació del Pip-Boy
   &__nav {
-    margin:  0.5rem 0.5rem 0.5rem;
+    margin:  0.5rem;
     border-bottom: 1px solid variables.$fallout-green-dark;
   }
 
@@ -216,6 +220,7 @@ body {
       color: variables.$fallout-bg;
     }
   }
+
   // Portada de Fallout
   &__intro {
     display: flex;
@@ -287,11 +292,11 @@ body {
     object-fit: cover;
     object-position: center 25%;
     border: 1px solid variables.$fallout-green-dark;
-
     filter: grayscale(100%) sepia(100%)
       hue-rotate(65deg) saturate(250%)
       brightness(100%) contrast(100%);
   }
+
   // Fitxa tècnica de la sèrie
   &__facts {
     display: grid;
@@ -312,8 +317,9 @@ body {
       overflow-wrap: break-word;
     }
   }
-  //Pantalles molt petites fitxa
-  @media (max-width: 389px) {
+
+  // Pantalles molt petites fitxa
+  @media (width <= 389px) {
   &__facts {
     grid-template-columns: 1fr;
     gap: 0.25rem;
@@ -336,12 +342,14 @@ body {
     margin: 0 auto;
     object-fit: contain;
   }
-@media (min-width: 390px) and (max-width: 1023px) {
+
+@media (width >= 390px) and (width <= 1023px) {
   &__vault-boy {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 }
+
  // Versió d'ordinador
   @media (min-width: variables.$breakpoint-desktop) {
     max-width: 1100px;
@@ -352,6 +360,7 @@ body {
       width: 53%;
       height: 55%;
     }
+
   // El menú es manté obert a ordinador
   &__menu-toggle {
     display: none;
@@ -360,8 +369,7 @@ body {
   // Enllaços en disposició horitzontal
   &__menu-list {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     gap: 0.5rem;
     margin: 0;
@@ -370,6 +378,7 @@ body {
   &__menu-link {
     padding: 0.5rem 0.25rem;
   }
+
  // Fitxes horitzontals a ordinador
     &__character {
       display: grid;
@@ -395,11 +404,13 @@ body {
   }
 
 }
+
 /* Oculta els elements durant l'arrencada del Pip-Boy */
 .js-booting {
   [data-reveal] {
     display: none;
   }
+
   // El menú i la descripció conserven el seu espai
   .pipboy__nav,
   .pipboy__description {
@@ -411,8 +422,8 @@ body {
     display: none;
   }
 }
+
 .uoc-footer {
-  
   text-align: center;
 }
 
